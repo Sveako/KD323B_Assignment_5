@@ -1,6 +1,8 @@
 package se.k3.antonochisak.kd323bassignment5.fragments;
 
 import android.app.Fragment;
+import android.view.View;
+import android.widget.AdapterView;
 
 import java.util.List;
 
@@ -18,4 +20,6 @@ public abstract class MoviesFragment extends Fragment implements Callback<List<R
     abstract void voteOnMovie(int i);
 
     abstract void updateVotes();
+
+    public abstract void onItemClick(AdapterView<?> adapterView, View view, int i, long l);
 }
